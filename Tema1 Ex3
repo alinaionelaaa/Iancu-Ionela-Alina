@@ -1,0 +1,11 @@
+%Exercitiul3
+
+
+a = randn(1, 10);           %crearea vectorului de numere complexe 
+b= j * randn(1, 10);
+c = a + b;
+function [medie , patrat ,inmultire]= Ex3f (c)  % sintaxa pentru functie
+lungime = length (c)
+medie = real(sum(c)) / lungime                  % creearea mediei
+patrat = c.^2                                   % creearea vectorului ridicat la patrat
+inmultire = c * c.'                             % creearea unei matrici prin inmultirea vectorului cu transpusul
